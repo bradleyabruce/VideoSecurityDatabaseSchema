@@ -35,3 +35,21 @@ CREATE TABLE tCameraServer(
 	ServerID int NOT NULL,
 	CameraID int NOT NULL
 );
+
+CREATE TABLE tServerLog
+(
+	ServerLogID int AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	ServerID int NOT NULL,
+	ServerStatusID int NOT NULL,
+	ServerMessage varchar(255),
+	LogDateTime DATETIME NOT NULL
+);
+
+CREATE TABLE tCameraLog
+(
+	CameraLogID int AUTO_INCREMENT NOT NULL PRIMARY KEY,
+	CameraID int NOT NULL,
+	CameraStatusID int NOT NULL,
+	CameraMessage varchar(255),
+	LogDateTime DATETIME NOT NULL
+);
