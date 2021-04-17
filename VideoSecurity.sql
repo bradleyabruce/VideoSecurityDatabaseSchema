@@ -22,12 +22,12 @@ CREATE TABLE tServers(
 
 CREATE TABLE tServerStatus(
     ServerStatusID int AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    ServerStatus varchar(25) NOT NULL
+    ServerStatus varchar(35) NOT NULL
 );
 
 CREATE TABLE tCameraStatus(
     CameraStatusID int AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    CameraStatus varchar(25) NOT NULL
+    CameraStatus varchar(35) NOT NULL
 );
 
 CREATE TABLE tCameraServer(
